@@ -65,4 +65,14 @@ export class Cypher {
     }
     return result;
   }
+
+  public encrypt(message: string): string {
+    let result: string = '';
+    for (let i = 0; i < message.length; i++) {
+      const char: string = message.charAt(i);
+      const index: number = this._alphabet.indexOf(char);
+      result += this._decryptionKey[index];
+    }
+    return result;
+  }
 }
