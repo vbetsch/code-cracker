@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "./tsconfig.json",
+    "@vbetsch/config-tsconfig/build/base"
+    //    "@vbetsch/config-tsconfig/build/lib"
+  ],
+  "compilerOptions": {
+    /* IMPORTANT: You have to define it ! */
+    "outDir": "./dist/",
+
+    /* Overrides */
+  }
+}

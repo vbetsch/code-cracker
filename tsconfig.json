@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "@vbetsch/config-tsconfig/base"
+    // "@vbetsch/config-tsconfig/strict"
+    // "@vbetsch/config-tsconfig/jsx"
+  ],
+  /* Overrides */
+  "compilerOptions": {
+    "paths": {
+      // "@src/*": ["src/*"],
+    }
+  }
+}
