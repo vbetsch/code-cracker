@@ -10,9 +10,9 @@
         "@vbetsch/config-prettier": "^1.0.0",
         "@vbetsch/config-tsconfig": "^1.0.0"
     },
-    "description": "Test of lib-config-ts ",
+    "description": "Kata from CodingDojo",
     "main": "src/index.ts",
-    "name": "lib-config-ts-test",
+    "name": "code-cracker",
     "scripts": {
         "eslint": "eslint",
         "jest": "jest",
