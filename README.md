@@ -1,5 +1,7 @@
 # Code Cracker
 
+> This repository was created using the [lib-config-ts-test](https://github.com/vbetsch/lib-config-ts-test) template
+
 ## Problem Description
 
 Given an alphabet decryption key like the one below, create a program that can crack any message
