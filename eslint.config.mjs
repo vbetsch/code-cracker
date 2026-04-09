@@ -20,7 +20,7 @@ export default tseslint.config(
     },
   },
 
-  /* IMPORTANT: You have to add these lines only if you are using import resolver ! */
+  /* --- Overrides --- */
   {
     settings: {
       'import/resolver': {
@@ -31,6 +31,4 @@ export default tseslint.config(
       },
     },
   }
-
-  /* --- Overrides --- */
 );
