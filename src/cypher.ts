@@ -56,13 +56,21 @@ export class Cypher {
     'o',
   ];
 
-  public decrypt(message: string): string {
+  private _translate(dictSource: string[], dictTarget: string[], message: string): string {
     let result: string = '';
     for (let i = 0; i < message.length; i++) {
       const char: string = message.charAt(i);
-      const index: number = this._decryptionKey.indexOf(char);
-      result += this._alphabet[index];
+      const index: number = dictSource.indexOf(char);
+      result += dictTarget[index];
     }
     return result;
+  }
+
+  public decrypt(message: string): string {
+    return this._translate(this._decryptionKey, this._alphabet, message);
+  }
+
+  public encrypt(message: string): string {
+    return this._translate(this._alphabet, this._decryptionKey, message);
   }
 }
