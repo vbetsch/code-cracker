@@ -1,3 +1,5 @@
+import { Cypher } from '@src/cypher';
+
 describe('Cypher', () => {
   it('should be OK', () => {
     const cypher: Cypher = new Cypher();

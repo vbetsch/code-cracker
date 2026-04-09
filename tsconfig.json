@@ -1,9 +1,11 @@
 {
+  "exclude": ["**/node_modules/**", "**/dist/**"],
   "extends": ["@vbetsch/config-tsconfig/base", "@vbetsch/config-tsconfig/strict"],
   /* Overrides */
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      // "@src/*": ["src/*"],
+      "@src/*": ["src/*"]
     }
   }
 }
