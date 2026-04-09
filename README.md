@@ -1,6 +1,6 @@
 # Code Cracker
 
-# Problem Description
+## Problem Description
 
 Given an alphabet decryption key like the one below, create a program that can crack any message
 using the decryption key.
