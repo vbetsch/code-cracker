@@ -17,13 +17,14 @@
     "main": "src/index.ts",
     "name": "code-cracker",
     "scripts": {
-        "eslint": "eslint",
-        "jest": "jest",
-        "prettier": "prettier --check .",
+        "build": "tsc -p tsconfig.build.json",
+        "check": "tsc",
+        "format": "prettier --write .",
+        "lint": "eslint",
         "start:dev": "tsx watch src/index.ts",
         "start:prod": "node dist/src/index.js",
-        "tsconfig": "tsc",
-        "tsconfig:build": "tsc -p tsconfig.build.json"
+        "test": "jest",
+        "tests": "jest"
     },
     "type": "module",
     "version": "1.0.0"
