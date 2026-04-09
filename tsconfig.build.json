@@ -1,12 +1,11 @@
 {
-  "extends": [
-    "./tsconfig.json",
-    "@vbetsch/config-tsconfig/build/base"
-  ],
+  "extends": ["./tsconfig.json", "@vbetsch/config-tsconfig/build/base"],
   "compilerOptions": {
     /* IMPORTANT: You have to define it ! */
-    "outDir": "./dist/",
+    "outDir": "./dist/"
 
     /* Overrides */
-  }
+  },
+  /* Overrides */
+  "exclude": ["**/tests/**"]
 }
