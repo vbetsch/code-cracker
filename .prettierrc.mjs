@@ -4,5 +4,4 @@ export default {
   ...baseVbetsch,
 
   /* Overrides */
-  // singleQuote: false,
 };

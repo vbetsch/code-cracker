@@ -1,8 +1,7 @@
 {
   "extends": [
-    "@vbetsch/config-tsconfig/base"
-    // "@vbetsch/config-tsconfig/strict"
-    // "@vbetsch/config-tsconfig/jsx"
+    "@vbetsch/config-tsconfig/base",
+    "@vbetsch/config-tsconfig/strict"
   ],
   /* Overrides */
   "compilerOptions": {
