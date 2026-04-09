@@ -1,5 +1,5 @@
 export class Cypher {
-  private _alphabet: string[] = [
+  private readonly _alphabet: string[] = [
     'a',
     'b',
     'c',
@@ -27,7 +27,7 @@ export class Cypher {
     'y',
     'z',
   ];
-  private _decryptionKey: string[] = [
+  private readonly _decryptionKey: string[] = [
     '!',
     ')',
     '"',
