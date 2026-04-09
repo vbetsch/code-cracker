@@ -3,8 +3,6 @@
   "compilerOptions": {
     /* IMPORTANT: You have to define it ! */
     "outDir": "./dist/"
-
-    /* Overrides */
   },
   /* Overrides */
   "exclude": [
