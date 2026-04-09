@@ -14,4 +14,12 @@ describe('Cypher', () => {
     const cypher: Cypher = new Cypher();
     expect(cypher.decrypt('ldga(')).toBe('world');
   });
+  it('should encrypt hello', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('hello')).toBe('&£aad');
+  });
+  it('should encrypt world', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('world')).toBe('ldga(');
+  });
 });
