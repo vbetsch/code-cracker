@@ -8,7 +8,10 @@
         "@vbetsch/config-eslint": "^1.0.0",
         "@vbetsch/config-jest": "^1.0.0",
         "@vbetsch/config-prettier": "^1.0.0",
-        "@vbetsch/config-tsconfig": "^1.0.0"
+        "@vbetsch/config-tsconfig": "^1.0.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.5"
     },
     "description": "Kata from CodingDojo",
     "main": "src/index.ts",
