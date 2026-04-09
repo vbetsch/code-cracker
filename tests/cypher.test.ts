@@ -6,4 +6,9 @@ describe('Cypher', () => {
     expect(cypher).toBeDefined();
     expect(cypher).toBeInstanceOf(Cypher);
   });
+  it('should decrypt', () => {
+    const message: string = '&£aad';
+    const cypher: Cypher = new Cypher();
+    expect(cypher.decrypt(message)).toBe('hello');
+  });
 });
