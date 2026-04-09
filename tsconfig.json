@@ -3,7 +3,7 @@
   /* Overrides */
   "compilerOptions": {
     "paths": {
-      // "@src/*": ["src/*"],
+      "@src/*": ["src/*"]
     }
   }
 }
