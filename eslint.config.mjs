@@ -22,6 +22,9 @@ export default tseslint.config(
 
   /* --- Overrides --- */
   {
+    ignores: ['./coverage/'],
+  },
+  {
     settings: {
       'import/resolver': {
         typescript: {
