@@ -18,7 +18,7 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
-  },
+  }
 
   /* --- Overrides --- */
 );

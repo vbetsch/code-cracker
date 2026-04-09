@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "@vbetsch/config-tsconfig/base",
-    "@vbetsch/config-tsconfig/strict"
-  ],
+  "extends": ["@vbetsch/config-tsconfig/base", "@vbetsch/config-tsconfig/strict"],
   /* Overrides */
   "compilerOptions": {
     "paths": {
