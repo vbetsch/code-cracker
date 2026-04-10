@@ -2,10 +2,10 @@
   "exclude": [
     "**/*.spec.ts",
     "**/*.test.ts",
+    "**/coverage/**",
     "**/dist/**",
     "**/node_modules/**",
-    "**/tests/**",
-    "jest.config.ts"
+    "**/tests/**"
   ],
   "extends": ["./tsconfig.json", "@vbetsch/config-tsconfig/build/base"],
   "compilerOptions": {
