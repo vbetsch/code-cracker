@@ -17,10 +17,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22.17.1
 
       - name: Install dependencies
-        run: npm clean-install
+        run: npm install
 
       - name: Run ESLint in strict mode
         if: github.ref == 'refs/heads/master'
