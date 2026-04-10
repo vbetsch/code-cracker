@@ -1,5 +1,5 @@
 {
-  "exclude": ["**/node_modules/**", "**/dist/**"],
+  "exclude": ["**/node_modules/**", "**/dist/**", "**/coverage/**"],
   "extends": ["@vbetsch/config-tsconfig/base", "@vbetsch/config-tsconfig/strict"],
   /* Overrides */
   "compilerOptions": {
