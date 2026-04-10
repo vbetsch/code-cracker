@@ -20,7 +20,7 @@ jobs:
           node-version: 22.17.1
 
       - name: Install dependencies
-        run: npm clean-install
+        run: npm install
 
       - name: Run tests with coverage
         if: github.ref == 'refs/heads/master'
