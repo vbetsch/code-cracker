@@ -28,7 +28,7 @@
     "lint": "eslint",
     "lint:strict": "eslint --max-warnings=0",
     "start:dev": "tsx watch src/index.ts",
-    "start:prod": "node dist/src/index.js",
+    "start:prod": "node dist/index.js",
     "test": "jest",
     "test:cov": "jest --coverage"
   },
