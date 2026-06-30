@@ -1,4 +1,4 @@
-import {Cypher} from "@src/cypher";
+import { Cypher } from '@src/cypher';
 
 console.log('Hello World!');
 const cypher: Cypher = new Cypher();
