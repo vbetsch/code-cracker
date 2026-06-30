@@ -61,7 +61,7 @@ export class Cypher {
     for (let i = 0; i < message.length; i++) {
       const char: string = message.charAt(i);
       const index: number = dictSource.indexOf(char);
-      if(!dictTarget[index]) continue;
+      if (!dictTarget[index]) continue;
       result += dictTarget[index];
     }
     return result;

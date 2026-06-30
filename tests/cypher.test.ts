@@ -1,4 +1,4 @@
-import {Cypher} from '@src/cypher';
+import { Cypher } from '@src/cypher';
 
 describe('Cypher', () => {
   it('should be OK', () => {
