@@ -42,4 +42,8 @@ describe('Cypher', () => {
     const cypher: Cypher = new Cypher();
     expect(cypher.encrypt('Hello')).toBe('&£aad');
   });
+  it('should handle unknown characters', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('Hello !')).toBe('&£aad');
+  });
 });
