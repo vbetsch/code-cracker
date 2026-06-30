@@ -1,4 +1,4 @@
-import { Cypher } from '@src/cypher';
+import {Cypher} from '@src/cypher';
 
 describe('Cypher', () => {
   it('should be OK', () => {
@@ -37,5 +37,9 @@ describe('Cypher', () => {
   it('should encrypt world', () => {
     const cypher: Cypher = new Cypher();
     expect(cypher.encrypt('world')).toBe('ldga(');
+  });
+  it('should handle cases', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('Hello')).toBe('&£aad');
   });
 });

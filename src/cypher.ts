@@ -71,6 +71,6 @@ export class Cypher {
   }
 
   public encrypt(message: string): string {
-    return this._translate(this._alphabet, this._decryptionKey, message);
+    return this._translate(this._alphabet, this._decryptionKey, message.toLowerCase());
   }
 }
