@@ -61,6 +61,7 @@ export class Cypher {
     for (let i = 0; i < message.length; i++) {
       const char: string = message.charAt(i);
       const index: number = dictSource.indexOf(char);
+      if(!dictTarget[index]) continue;
       result += dictTarget[index];
     }
     return result;
@@ -71,6 +72,6 @@ export class Cypher {
   }
 
   public encrypt(message: string): string {
-    return this._translate(this._alphabet, this._decryptionKey, message);
+    return this._translate(this._alphabet, this._decryptionKey, message.toLowerCase());
   }
 }
