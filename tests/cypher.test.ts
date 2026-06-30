@@ -6,6 +6,14 @@ describe('Cypher', () => {
     expect(cypher).toBeDefined();
     expect(cypher).toBeInstanceOf(Cypher);
   });
+  it('should decrypt h', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.decrypt('&')).toBe('h');
+  });
+  it('should decrypt he', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.decrypt('&£')).toBe('he');
+  });
   it('should decrypt hello', () => {
     const cypher: Cypher = new Cypher();
     expect(cypher.decrypt('&£aad')).toBe('hello');
@@ -13,6 +21,14 @@ describe('Cypher', () => {
   it('should decrypt world', () => {
     const cypher: Cypher = new Cypher();
     expect(cypher.decrypt('ldga(')).toBe('world');
+  });
+  it('should encrypt h', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('h')).toBe('&');
+  });
+  it('should encrypt he', () => {
+    const cypher: Cypher = new Cypher();
+    expect(cypher.encrypt('he')).toBe('&£');
   });
   it('should encrypt hello', () => {
     const cypher: Cypher = new Cypher();
